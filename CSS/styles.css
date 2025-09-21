@@ -329,7 +329,7 @@ body {
 .contact-card h1 {
   font-size: 28px;
   margin-bottom: 10px;
-  color: #111;
+  color: #111111;
 }
 
 .contact-card p {
@@ -362,22 +362,22 @@ body {
 
 /* Button color variants */
 .contact-link.email {
-  background: #1565c0;
+  background: #502f4d;
 }
 .contact-link.github {
-  background: #24292f;
+  background: #502f4d;
 }
 .contact-link.linkedin {
-  background: #0a66c2;
+  background: #502f4d;
 }
 .contact-link.cv {
-  background: #28a745;
+  background: #573554;
 }
 
 /* Hover Effects */
 .contact-link:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(235, 205, 228, 0.2);
 }
 
 /* ===== Responsive ===== */
