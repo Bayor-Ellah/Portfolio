@@ -1,203 +1,403 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emmanuella Bayor - Junior Web Developer Portfolio showcasing projects in HTML, CSS, Python, and NiceGui">
+  <meta name="keywords" content="Web Developer, Frontend Developer, Python, HTML, CSS, Portfolio, NiceGui">
+  <meta name="author" content="Emmanuella Bayor">
+  <meta property="og:title" content="Emmanuella Bayor - Web Developer Portfolio">
+  <meta property="og:description" content="Passionate Frontend Developer with expertise in Python and NiceGui">
+  <meta property="og:type" content="website">
+
   <title>Portfolio | Emmanuella Bayor</title>
-  <link rel="stylesheet" href="CSS/styles.css"> <!-- CSS file -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Libertinus+Sans">
-  <style>
-  
-  </style>
+
+  <!-- Modern Font Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container nav-container">
-       <a href="#" class="logo">E||B</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="logo">
+        <div class="logo-container">
+          <div class="logo-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="15" fill="#000000" stroke="#ffffff" stroke-width="2"/>
+              <text x="16" y="20" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="12">EB</text>
+            </svg>
+          </div>
+          <span class="logo-text">Emmanuella</span>
+        </div>
+      </div>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#education" role="menuitem">Education</a></li>
+        <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="hero-text">
-    <h1><span>Emmanuella Bayor</span></h1>
-    <h3>Junior Web Developer</h3>
-    <p>
-      Passionate Frontend Developer with a strong foundation in Python and NiceGui.
-      Skilled in creating scalable, functional user interfaces and seamless website integrations. 
-      Currently focused on advancing expertise in Python programming while gaining hands-on 
-      experience in projects that explore innovative AI solutions.
-    </p>
-  </div>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Emmanuella Bayor</span>
+          </h1>
+          
+          <p class="hero-description">
+            Passionate Frontend Developer with a strong foundation in Python and NiceGui.
+            Skilled in creating scalable, functional user interfaces and seamless website integrations.
+            Currently focused on advancing expertise in Python programming while gaining hands-on
+            experience in projects that explore innovative AI solutions.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
 
-  <div class="hero-image">
-    <img src="assets/ella2.jpeg" width="300" height="300" alt="Emmanuella Bayor">
-  </div>
-</section>
-
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <img src="assets/ella2.jpeg" alt="Emmanuella Bayor - Web Developer" class="hero-image">
+            <div class="image-glow"></div>
+          </div>
+          <div class="floating-elements">
+            <div class="floating-element floating-element-1"></div>
+            <div class="floating-element floating-element-2"></div>
+            <div class="floating-element floating-element-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== ABOUT SECTION ===== -->
-  <section id="about" class="section">
-    <div class="container about-container">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          Hello! I am a Web Developer with a strong interest in frontend development and AI,
-          dedicated to enhancing my technical expertise and contributing to the development of
-          impactful software solutions.
-        </p>
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
       </div>
-      <div class="about-photo">
-        <img src="assets/ella.jpeg" alt="Ella's Profile Photo">
-      </div>
-    </div>
-  </section>
 
-
-  <!-- ===== EDUCATION ===== -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <ul class="list">
-        <h4>Web development Program</h4>
-        <li>Mest Africa</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== EXPERIENCE ===== -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Experience</h2>
-      <ul class="list">
-        <li>A simple landing page using only HTML.</li>
-        <li>Building a portfolio website using HTML and CSS</li>
-      </ul>
-    </div>
-  </section>
-
- 
-
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="list"> 
-       <li>HTML & CSS</li>       
-        <li>Python</li>
-        <li>Git & GitHub</li>
-        <li>NiceGui</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>Project 1</h3>
-          <p>Developed a personal portfolio website to showcase my skills, expertise, and projects</p>
-           <a
-          href="https://bayor-ellah.github.io/Portfolio/"
-          download
-          class="contact-link cv"
-        >
-           View Project 
-        </a>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-description">
+            Hello! I am a passionate Web Developer with a strong interest in frontend development and AI,
+            dedicated to enhancing my technical expertise and contributing to the development of
+            impactful software solutions.
+          </p>
+          <p class="about-description">
+            My journey in web development has equipped me with the skills to create beautiful,
+            responsive, and user-friendly applications. I'm always eager to learn new technologies
+            and take on challenging projects that push the boundaries of what's possible.
+          </p>
         </div>
-        <div class="project">
-          <h3>Project 2</h3>
-          <p>Collaborated with colleagues to building a  restaurant 
-            advertisement management platform using NiceGUI.</p>
-            <a
-          href="https://github.com/Mest-Grow-Projects/advertisement_manager.git"
-          download
-          class="contact-link cv"
-        >
-           View Project 
-        </a>
+
+        <div class="about-visual">
+          <div class="about-image-container">
+            <img src="assets/ella.jpeg" alt="Emmanuella Bayor Profile" class="about-image">
+            <div class="about-image-overlay"></div>
+          </div>
         </div>
-         <div class="project">
-          <h3>Project 3</h3>
-          <p>Developed a college event management website using NiceGUI,
-             designed to streamline event organization and enhance student engagement.</p>
-             <a
-          href="http://127.0.0.1:8080/"
-          download
-          class="contact-link cv"
-        >
-           View Project 
-        </a>
-        </div>
-       
       </div>
     </div>
+  </section>
 
-   
-
-  <!-- ===== CONTACT ===== -->
-   <main class="contact-container" id="contact">
-   
-    <section class="contact-card">
-      <h1>Contact Me</h1>
-      <p>
-        I’m always open to new opportunities and collaborations. 
-        Connect with me through any of the options below.
-      </p>
-
-      <div class="contact-links">
-
-        <a
-          href="https://github.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link github"
-        >
-           GitHub Profile
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/emmanuella-bayor-a448082a0/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link linkedin"
-        >
-           LinkedIn Profile
-        </a>
-
-        <a
-          href="assets/EMMANUELLA BAYOR CV.docx"
-          download
-          class="contact-link cv"
-        >
-           Download CV
-        </a>
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <div class="section-divider"></div>
       </div>
-    </section>
-  </main>
 
-  
+      <div class="education-content">
+        <div class="education-card">
+          <div class="education-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3L1 9L12 15L21 10.09V17H23V9L12 3Z" fill="currentColor"/>
+              <path d="M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="education-title">Web Development Program</h3>
+          <p class="education-institution">MEST Africa</p>
+          <p class="education-description">
+            Comprehensive training in modern web development technologies,
+            focusing on both frontend and backend development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-divider"></div>
+      </div>
 
-  <footer>
-    <p>© 2025 Emmanuella Bayor. All Rights Reserved.</p>
+      <div class="experience-content">
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="experience-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div class="experience-details">
+              <h4 class="experience-title">Landing Page Development</h4>
+              <p class="experience-description">Created a simple landing page using only HTML</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div class="experience-details">
+              <h4 class="experience-title">Portfolio Website</h4>
+              <p class="experience-description">Built a responsive portfolio website using HTML and CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-content">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h4 class="skill-name">HTML & CSS</h4>
+            <p class="skill-description">Modern responsive design</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h4 class="skill-name">Python</h4>
+            <p class="skill-description">Frontenddevelopment</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h4 class="skill-name">Git & GitHub</h4>
+            <p class="skill-description">Version control</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h4 class="skill-name">NiceGui</h4>
+            <p class="skill-description">Python web framework</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-content">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=200&fit=crop&crop=center" alt="Portfolio Website Project" class="project-img">
+              <div class="project-overlay">
+                <a href="https://bayor-ellah.github.io/Portfolio/" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">
+                Developed a personal portfolio website to showcase my skills, expertise, and projects.
+                Built with modern HTML5, CSS3, and responsive design principles.
+              </p>
+             
+              <div class="project-buttons">
+                <a href="https://bayor-ellah.github.io/Portfolio/" class="btn btn-primary project-btn" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=200&fit=crop&crop=center" alt="Restaurant Advertisement Platform" class="project-img">
+              <div class="project-overlay">
+                <a href="https://github.com/Mest-Grow-Projects/advertisement_manager.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Restaurant Ad Manager</h3>
+              <p class="project-description">
+                Collaborated with colleagues to build a restaurant advertisement management platform using NiceGUI.
+                Features include ad creation, management, and analytics dashboard.
+              </p>
+              
+              <div class="project-buttons">
+                <a href="https://github.com/Mest-Grow-Projects/advertisement_manager.git" class="btn btn-primary project-btn" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=200&fit=crop&crop=center" alt="College Event Management System" class="project-img">
+              <div class="project-overlay">
+                <a href="https://github.com/bayor-ellah/Event-Management-System" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Event Management System</h3>
+              <p class="project-description">
+                Developed a college event management website using NiceGUI, designed to streamline
+                event organization and enhance student engagement with modern UI/UX.
+              </p>
+              
+              <div class="project-buttons">
+                <a href="https://github.com/bayor-ellah/Event-Management-System" class="btn btn-primary project-btn" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3 class="contact-title">Let's work together</h3>
+          <p class="contact-description">
+            I'm always open to new opportunities and collaborations.
+            Connect with me through any of the options below.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="https://github.com/" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.075 23.13 9.075 22.815C9.075 22.545 9.06 21.585 9.06 20.58C5.715 21.195 5.13 18.975 5.13 18.975C4.695 17.73 4.035 17.37 4.035 17.37C3.105 16.65 4.11 16.665 4.11 16.665C5.1 16.725 5.64 17.85 5.64 17.85C6.585 19.395 8.265 18.96 9.09 18.675C9.18 18.255 9.435 17.97 9.72 17.82C7.695 17.55 5.565 16.605 5.565 11.85C5.565 10.635 5.955 9.585 6.585 8.745C6.48 8.475 6.135 7.335 6.69 5.55C6.69 5.55 7.515 5.265 9.075 6.78C9.885 6.525 10.74 6.395 11.595 6.39C12.45 6.395 13.305 6.525 14.115 6.78C15.675 5.265 16.5 5.55 16.5 5.55C17.055 7.335 16.71 8.475 16.605 8.745C17.235 9.585 17.625 10.635 17.625 11.85C17.625 16.62 15.48 17.535 13.44 17.805C13.8 18.015 14.125 18.57 14.125 19.515C14.125 20.925 14.11 22.05 14.11 22.815C14.11 23.13 14.38 23.5 14.98 23.385C19.755 21.795 23.19 17.31 23.19 12C23.19 5.37 17.82 0 12 0Z" fill="currentColor"/>
+            </svg>
+            <span>GitHub Profile</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/emmanuella-bayor-a448082a0/" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452H16.893V14.89C16.893 13.593 16.885 11.869 15.34 11.869C13.785 11.869 13.551 13.325 13.551 14.77V20.452H10V9.75H13.413V11.019H13.449C13.988 10.151 15.163 9.247 16.845 9.247C20.447 9.247 20.447 12.131 20.447 14.446V20.452Z" fill="currentColor"/>
+              <path d="M5.337 8.433C4.193 8.433 3.281 7.521 3.281 6.377C3.281 5.233 4.193 4.321 5.337 4.321C6.481 4.321 7.393 5.233 7.393 6.377C7.393 7.521 6.481 8.433 5.337 8.433ZM3.558 20.452H7.116V9.75H3.558V20.452Z" fill="currentColor"/>
+              <path d="M22 0H2C0.895 0 0 0.895 0 2V22C0 23.105 0.895 24 2 24H22C23.105 24 24 23.105 24 22V2C24 0.895 23.105 0 22 0Z" fill="currentColor"/>
+            </svg>
+            <span>LinkedIn Profile</span>
+          </a>
+
+          <a href="assets/EMMANUELLA BAYOR CV.docx" class="contact-link" download>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z" fill="currentColor"/>
+              <polyline points="14,2 14,8 20,8" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/>
+              <polyline points="10,9 9,9 8,9" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">© 2025 Emmanuella Bayor. All Rights Reserved.</p>
+        <p class="footer-text">Built with ❤️ using modern web technologies</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7 14L12 9L17 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="js/script.js"></script>
 </body>
 </html>
